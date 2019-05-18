@@ -10,6 +10,8 @@ Note:As i use archlinux, it is enough for me to type python, you may need to typ
     python -m venv envLMS
     source envLMS/bin/activate
 
+Note2: whenever want to deactivate the virtual environment just type "deactivate" and press enter. But don`t do that right now :)
+
 Then you should need to install required packages into this virtual environment by executing the command:
 
     sudo pip install -r requirements.txt
@@ -22,4 +24,8 @@ then makemigrations and migrate and after these runserver :)
     python manage.py migrate
     python manage.pyt runserver
 
-Note: whenever want to deactivate the virtual environment just type "deactivate" and press enter.
+Now server is activated and you may reach the greeting page from the address: "http://localhost:8000/" 
+Though, you need to create at least a user to login. To do so close the server and type the following command from bash:
+
+    python manage.py createsuperuser
+
