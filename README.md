@@ -1,6 +1,10 @@
 # LMS
 ## How to make things work
-First thing to do to make things work smoothly is to create and activate a virtual environment.
+First of all you need to clone the project to somewhere in your drive by executing the command:
+
+    git clone https://github.com/ipa-mosit/LMS.git
+
+Second thing to do to make things work smoothly is to create and activate a virtual environment.
 
     python -m venv envLMS
     source envLMS/bin/activate
