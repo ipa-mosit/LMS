@@ -21,5 +21,7 @@ from django.views.generic.base import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls')),
+    # auth uygulamasının yeri:
+    # /usr/lib/python3.7/site-packages/django/contrib/auth
     path('', TemplateView.as_view(template_name='home.html'), name='home'), # new
 ]
