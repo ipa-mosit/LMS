@@ -5,6 +5,7 @@ First of all you need to clone the project to somewhere in your drive by executi
     git clone https://github.com/ipa-mosit/LMS.git
 
 Second thing to do to make things work smoothly is to create and activate a virtual environment.
+Note:As i use archlinux, it is enough for me to type python, you may need to type in "python3" instead.
 
     python -m venv envLMS
     source envLMS/bin/activate
