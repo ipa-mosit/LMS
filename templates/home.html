@@ -5,10 +5,21 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 <img src="{%static "cLMS/ipalogo.png"%}" alt="My_image">
+<section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
+  </section>
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
   <p><a href="{% url 'logout'%}">logout</a></p>
 {% else %}
+
   <p>You are not logged in</p>
   <a href="{% url 'login' %}">login</a>
 {% endif %}
