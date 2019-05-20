@@ -1,9 +1,10 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
-
+{%load static%}
+{# Hello There! #}
 {% block title %}Home{% endblock %}
-
 {% block content %}
+<img src="{%static "cLMS/ipalogo.png"%}" alt="My_image">
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
   <p><a href="{% url 'logout'%}">logout</a></p>
