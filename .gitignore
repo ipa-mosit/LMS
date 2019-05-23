@@ -3,3 +3,4 @@ envLMS/
 cLMS/__pycache__/
 static/node_modules/
 static/package-lock.json
+media/
